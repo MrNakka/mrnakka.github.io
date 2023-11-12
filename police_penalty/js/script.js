@@ -15,7 +15,7 @@ $(function () {
     // console.log('合計：' + _sum);
     $('.js-total').val(_sum);
     // 
-    if (_sum >= 3000000) {
+    if (_sum >= 300000) {
       $('.js-jail').show();
     }
     // 
