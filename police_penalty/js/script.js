@@ -50,4 +50,6 @@ $(function () {
     $('.js-jail').hide();
     $('.js-confiscation').hide();
   })
+
+  var accordions = bulmaAccordion.attach();
 });
