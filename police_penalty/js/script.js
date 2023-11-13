@@ -14,16 +14,25 @@ $(function () {
     })
     // console.log('合計：' + _sum);
     $('.js-total').val(_sum);
-    // 
-    if (_sum >= 300000) {
+    // 罰金額でのプリズン判定
+    if (_sum >= 1000000) {
       $('.js-jail').show();
     }
     // 
     var _text = $(this).children(':selected').text();
-    // console.log(_text)
-    if (_text == '詐欺罪' || _text == '窃盗罪' || _text == 'プレイヤー殺人及び未遂' || _text == 'テロ行為' || _text == '収賄/汚職罪') {
+    // 詐欺・窃盗・ATM -> 金額低くてもプリズン
+    if (_text == '詐欺罪' || _text == '窃盗罪' || _text == 'ATM強盗') {
       $('.js-jail').show();
     }
+    // 殺人(未遂) -> 金額低くてもプリズン
+    if (_text == 'プレイヤー殺人及び未遂' || _text == 'テロ行為' || _text == '収賄/汚職罪') {
+      $('.js-jail').show();
+    }
+    // 所持金没収とセット
+    if (_text == 'テロ行為' || _text == '収賄/汚職罪') {
+      $('.js-jail').show();
+    }
+    // 所持資産没収
     if (_text == 'テロ行為' || _text == '収賄/汚職罪' || _text == 'オイルリグ強盗') {
       $('.js-confiscation').show();
     }
