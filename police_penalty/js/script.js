@@ -2,6 +2,7 @@ $(function () {
   // 
   $('.js-jail').hide();
   $('.js-confiscation').hide();
+  $('.js-terror').hide();
   $('.js-select').on('change', function () {
     $('.js-jail').hide();
     $('.js-confiscation').hide();
