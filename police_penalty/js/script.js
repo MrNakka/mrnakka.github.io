@@ -36,6 +36,10 @@ $(function () {
     if (_text == 'テロ行為' || _text == '収賄/汚職罪' || _text == 'オイルリグ強盗') {
       $('.js-confiscation').show();
     }
+    // 所持資産没収
+    if (_text == '重テロ行為') {
+      $('.js-terror').show();
+    }
   });
   // 
   $('.js-copy').on('click', function () {
