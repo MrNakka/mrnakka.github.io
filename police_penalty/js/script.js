@@ -55,6 +55,36 @@ $(function () {
     $('.js-jail').hide();
     $('.js-confiscation').hide();
   })
+  // 犯罪セット
+  $('.js-set-store').on('click', function () {
+    $('.js-select').eq(0).find('option').filter(function (index) {
+      return $(this).text() === 'コンビニ強盗罪';
+    }).prop('selected', true);
+    $('.js-select').eq(1).find('option').filter(function (index) {
+      return $(this).text() === '公務執行妨害';
+    }).prop('selected', true);
+    $('.js-select').eq(2).find('option').filter(function (index) {
+      return $(this).text() === '公務員殺人及び未遂';
+    }).prop('selected', true);
+    $('.js-select').eq(3).find('option').filter(function (index) {
+      return $(this).text() === '銃刀法違反';
+    }).prop('selected', true);
+  })
+  // 犯罪セット
+  $('.js-set-bank').on('click', function () {
+    $('.js-select').eq(0).find('option').filter(function (index) {
+      return $(this).text() === '銀行強盗罪';
+    }).prop('selected', true);
+    $('.js-select').eq(1).find('option').filter(function (index) {
+      return $(this).text() === '公務執行妨害';
+    }).prop('selected', true);
+    $('.js-select').eq(2).find('option').filter(function (index) {
+      return $(this).text() === '公務員殺人及び未遂';
+    }).prop('selected', true);
+    $('.js-select').eq(3).find('option').filter(function (index) {
+      return $(this).text() === '銃刀法違反';
+    }).prop('selected', true);
+  })
 
   var accordions = bulmaAccordion.attach();
 });
