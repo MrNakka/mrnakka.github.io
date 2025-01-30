@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天下統一サンプル</title>
+  <link rel="stylesheet" href="/police_penalty/css/bulma.min.css">
+  <link rel="stylesheet" href="/tenichi_rust/css/modaal.min.css">
+  <link rel="stylesheet" href="/tenichi_rust/css/style.css">
+  <script src="/police_penalty/js/jquery-3.7.1.min.js"></script>
+  <script src="/tenichi_rust/js/modaal.min.js"></script>
+  <script src="/tenichi_rust/js/script.js"></script>
+</head>
+<body>
+  <h2 class="title">2日目</h2>
+  <div class="map">
+    <svg class="geolonia-svg-map" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+      <title>Japanese Prefectures</title>
+      <desc>Created by Geolonia (https://geolonia.com/).</desc>
+      <g class="svg-map">
+        <g class="prefectures">
+          <g class="okinawa kyusyu-okinawa prefecture team09 modal01" data-code="47" href="#modal47">
+            <title>沖縄 / Okinawa</title>
+            <g>
+              <path d="M144.9,456.4c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h25.6c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H144.9z"></path>
+            </g>
+          </g>
+          <g class="kagoshima kyusyu kyusyu-okinawa prefecture team08 modal01" data-code="46" href="#modal46">
+            <title>鹿児島 / Kagoshima</title>
+            <path d="M99.3,912.7c-4.4,0-8,3.6-8,8V992c0,4.4,3.6,8,8,8h116.8c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H99.3z"></path>
+          </g>
+          <g class="miyazaki kyusyu kyusyu-okinawa prefecture team08 modal01" data-code="45" href="#modal45">
+            <title>宮崎 / Miyazaki</title>
+            <path d="M167.8,821.5c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h48.4c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H167.8z"></path>
+          </g>
+          <g class="oita kyusyu kyusyu-okinawa prefecture team08 modal01" data-code="44" href="#modal44">
+            <title>大分 / Oita</title>
+            <path d="M167.8,730.2c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h48.4c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H167.8z"></path>
+          </g>
+          <g class="kumamoto kyusyu kyusyu-okinawa prefecture team08 modal01" data-code="43" href="#modal43">
+            <title>熊本 / kumamoto</title>
+            <path d="M99.3,730.2c-4.4,0-8,3.6-8,8v162.5c0,4.4,3.6,8,8,8h48.4c4.4,0,8-3.6,8-8V738.2c0-4.4-3.6-8-8-8H99.3z"></path>
+          </g>
+          <g class="nagasaki kyusyu kyusyu-okinawa prefecture team08 modal01" data-code="42" href="#modal42">
+            <title>長崎 / Nagasaki</title>
+            <path d="M8,638.9c-4.4,0-8,3.6-8,8v94c0,4.4,3.6,8,8,8h25.6c4.4,0,8-3.6,8-8v-94c0-4.4-3.6-8-8-8H8z"></path>
+          </g>
+          <g class="saga kyusyu kyusyu-okinawa prefecture team08 modal01" data-code="41" href="#modal41">
+            <title>佐賀 / Saga</title>
+            <path d="M53.7,638.9c-4.4,0-8,3.6-8,8v94c0,4.4,3.6,8,8,8h25.6c4.4,0,8-3.6,8-8v-94c0-4.4-3.6-8-8-8H53.7z"></path>
+          </g>
+          <g class="fukuoka kyusyu kyusyu-okinawa prefecture team08 modal01" data-code="40" href="#modal40">
+            <title>福岡 / Fukuoka</title>
+            <path d="M99.3,638.9c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h116.8c4.4,0,8-3.6,8-8V647c0-4.4-3.6-8-8-8H99.3z"></path>
+          </g>
+          <g class="kochi shikoku prefecture team06 modal01" data-code="39" href="#modal39">
+            <title>高知 / Kochi</title>
+            <path d="M281.9,935.6c-4.4,0-8,3.6-8,8V992c0,4.4,3.6,8,8,8H353c4.4,0,8-3.6,8-8v-48.4c0-4.4-3.6-8-8-8H281.9z"></path>
+          </g>
+          <g class="ehime sikoku prefecture team06 modal01" data-code="38" href="#modal38">
+            <title>愛媛 / Ehime</title>
+            <path d="M281.9,867.1c-4.4,0-8,3.6-8,8v48.4c0,4.4,3.6,8,8,8H353c4.4,0,8-3.6,8-8v-48.4c0-4.4-3.6-8-8-8H281.9z"></path>
+          </g>
+          <g class="kagawa shikoku prefecture team06 modal01" data-code="37" href="#modal37">
+            <title>香川 / Kagawa</title>
+            <path d="M373.1,867.1c-4.4,0-8,3.6-8,8v48.4c0,4.4,3.6,8,8,8h71.2c4.4,0,8-3.6,8-8v-48.4c0-4.4-3.6-8-8-8H373.1z"></path>
+          </g>
+          <g class="tokushima shikoku prefecture team06 modal01" data-code="36" href="#modal36">
+            <title>徳島 / Tokushima</title>
+            <path d="M373.1,935.6c-4.4,0-8,3.6-8,8V992c0,4.4,3.6,8,8,8h71.2c4.4,0,8-3.6,8-8v-48.4c0-4.4-3.6-8-8-8H373.1z"></path>
+          </g>
+          <g class="yamaguchi chugoku prefecture team03  modal01" data-code="35" href="#modal35">
+            <title>山口 / Yamaguchi</title>
+            <path d="M281.9,638.9c-4.4,0-8,3.6-8,8v162.5c0,4.4,3.6,8,8,8h25.6c4.4,0,8-3.6,8-8V647c0-4.4-3.6-8-8-8H281.9z"></path>
+          </g>
+          <g class="hiroshima chugoku prefecture team06 modal01" data-code="34" href="#modal34">
+            <title>広島 / Hiroshima</title>
+            <path d="M327.5,730.2c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h48.4c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H327.5z"></path>
+          </g>
+          <g class="okayama chugoku prefecture team03  modal01" data-code="33" href="#modal33">
+            <title>岡山 / Okayama</title>
+            <path d="M395.9,730.2c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h25.6c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H395.9z"></path>
+          </g>
+          <g class="shimane chugoku prefecture team03  modal01" data-code="32" href="#modal32">
+            <title>島根 / Shimane</title>
+            <path d="M327.5,638.9c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h48.4c4.4,0,8-3.6,8-8V647c0-4.4-3.6-8-8-8H327.5z"></path>
+          </g>
+          <g class="tottori chugoku prefecture team03  modal01" data-code="31" href="#modal31">
+            <title>鳥取 / Tottori</title>
+            <path d="M395.9,638.9c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h25.6c4.4,0,8-3.6,8-8V647c0-4.4-3.6-8-8-8H395.9z"></path>
+          </g>
+          <g class="wakayama kinki prefecture team05 modal01" data-code="30" href="#modal30">
+            <title>和歌山 / Wakayama</title>
+            <path d="M510,958.4c-4.4,0-8,3.6-8,8V992c0,4.4,3.6,8,8,8h71.2c4.4,0,8-3.6,8-8v-25.6c0-4.4-3.6-8-8-8H510z"></path>
+          </g>
+          <g class="nara kinki prefecture team05 modal01" data-code="29" href="#modal29">
+            <title>奈良 / Nara</title>
+            <path d="M555.7,775.8c-4.4,0-8,3.6-8,8v162.5c0,4.4,3.6,8,8,8h25.6c4.4,0,8-3.6,8-8V783.9c0-4.4-3.6-8-8-8H555.7z"></path>
+          </g>
+          <g class="hyogo kinki prefecture team03  modal01" data-code="28" href="#modal28">
+            <title>兵庫 / Hyogo</title>
+            <path d="M441.6,638.9c-4.4,0-8,3.6-8,8v162.5c0,4.4,3.6,8,8,8H490c4.4,0,8-3.6,8-8V647c0-4.4-3.6-8-8-8H441.6z"></path>
+          </g>
+          <g class="osaka kinki prefecture team03  modal01" data-code="27" href="#modal27">
+            <title>大阪 / Osaka</title>
+            <path d="M510,775.8c-4.4,0-8,3.6-8,8v162.5c0,4.4,3.6,8,8,8h25.6c4.4,0,8-3.6,8-8V783.9c0-4.4-3.6-8-8-8H510z"></path>
+          </g>
+          <g class="kyoto kinki prefecture team05 modal01" data-code="26" href="#modal26">
+            <title>京都 / Kyoto</title>
+            <path d="M510,638.9c-4.4,0-8,3.6-8,8v116.8c0,4.4,3.6,8,8,8h71.2c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8h-25.6c-6.6,0-12-5.4-12-12V647c0-4.4-3.6-8-8-8H510z"></path>
+          </g>
+          <g class="shiga kinki prefecture team04 modal01" data-code="25" href="#modal25">
+            <title>滋賀 / Shiga</title>
+            <path d="M601.3,684.6c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h25.6c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H601.3z"></path>
+          </g>
+          <g class="mie kinki prefecture team04 modal01" data-code="24" href="#modal24">
+            <title>三重 / Mie</title>
+            <path d="M601.3,775.8c-4.4,0-8,3.6-8,8V992c0,4.4,3.6,8,8,8h25.6c4.4,0,8-3.6,8-8V783.9c0-4.4-3.6-8-8-8H601.3z"></path>
+          </g>
+          <g class="aichi chubu prefecture team04 modal01" data-code="23" href="#modal23">
+            <title>愛知 / Aichi</title>
+            <path d="M647,867.1c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h71.2c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H647z"></path>
+          </g>
+          <g class="shizuoka chubu prefecture team03 modal01" data-code="22" href="#modal22">
+            <title>静岡 / Shizuoka</title>
+            <path d="M738.2,867.1c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h71.2c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H738.2z"></path>
+          </g>
+          <g class="gifu chubu prefecture team03 modal01" data-code="21" href="#modal21">
+            <title>岐阜 / Gifu</title>
+            <path d="M647,593.3c-4.4,0-8,3.6-8,8v253.7c0,4.4,3.6,8,8,8h48.4c4.4,0,8-3.6,8-8V601.3c0-4.4-3.6-8-8-8H647z"></path>
+          </g>
+          <g class="nagano chubu prefecture team03 modal01" data-code="20" href="#modal20">
+            <title>長野 / Nagano</title>
+            <path d="M715.4,593.3c-4.4,0-8,3.6-8,8v253.7c0,4.4,3.6,8,8,8H741c4.4,0,8-3.6,8-8v-71.2c0-6.6,5.4-12,12-12h2.7c4.4,0,8-3.6,8-8V601.3c0-4.4-3.6-8-8-8H715.4z"></path>
+          </g>
+          <g class="yamanashi chubu prefecture team03 modal01" data-code="19" href="#modal19">
+            <title>山梨 / Yamanashi</title>
+            <path d="M761,775.8c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h48.4c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H761z"></path>
+          </g>
+          <g class="fukui chubu prefecture team03 modal01" data-code="18" href="#modal18">
+            <title>福井 / Fukui</title>
+            <path d="M555.7,638.9c-4.4,0-8,3.6-8,8v25.6c0,4.4,3.6,8,8,8h71.2c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8h-25.6c-4.4,0-8,3.6-8,8v25.6c0,6.6-5.4,12-12,12H555.7z"></path>
+          </g>
+          <g class="ishikawa chubu prefecture team03 modal01" data-code="17" href="#modal17">
+            <title>石川 / Ishikawa</title>
+            <path d="M601.3,433.6c-4.4,0-8,3.6-8,8v139.6c0,4.4,3.6,8,8,8h25.6c4.4,0,8-3.6,8-8V441.6c0-4.4-3.6-8-8-8H601.3z"></path>
+          </g>
+          <g class="toyama chubu prefecture team03 modal01" data-code="16" href="#modal16">
+            <title>富山 / Toyama</title>
+            <path d="M647,502c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h71.2c4.4,0,8-3.6,8-8V510c0-4.4-3.6-8-8-8H647z"></path>
+          </g>
+          <g class="niigata chubu prefecture team01 modal01" data-code="15" href="#modal15">
+            <title>新潟 / Niigata</title>
+            <path d="M738.2,502c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h71.2c4.4,0,8-3.6,8-8V464.4c0-4.4-3.6-8-8-8h-25.6c-4.4,0-8,3.6-8,8V490c0,6.6-5.4,12-12,12H738.2z"></path>
+          </g>
+          <g class="kanagawa kanto prefecture team02" data-code="14" href="#modal14">
+            <title>神奈川 / Kanagawa</title>
+            <path d="M829.5,867.1c-4.4,0-8,3.6-8,8v48.4c0,4.4,3.6,8,8,8h48.4c4.4,0,8-3.6,8-8v-48.4c0-4.4-3.6-8-8-8H829.5z"></path>
+          </g>
+          <g class="tokyo kanto prefecture team02" data-code="13" href="#modal13">
+            <title>東京 / Tokyo</title>
+            <path d="M829.5,775.8c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h48.4c4.4,0,8-3.6,8-8v-2.7c0-6.6,5.4-12,12-12h25.6c4.4,0,8-3.6,8-8v-48.4c0-4.4-3.6-8-8-8H829.5z"></path>
+          </g>
+          <g class="chiba kanto prefecture team02" data-code="12" href="#modal12">
+            <title>千葉 / Chiba</title>
+            <path d="M943.6,730.2c-4.4,0-8,3.6-8,8v208.1c0,4.4,3.6,8,8,8H992c4.4,0,8-3.6,8-8V738.2c0-4.4-3.6-8-8-8H943.6z"></path>
+          </g>
+          <g class="saitama kanto prefecture team02" data-code="11" href="#modal11">
+            <title>埼玉 / Saitama</title>
+            <path d="M783.9,684.6c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h139.6c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H783.9z"></path>
+          </g>
+          <g class="gunma kanto prefecture team02" data-code="10" href="#modal10">
+            <title>群馬 / Gunma</title>
+            <path d="M783.9,593.3c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8H848c1.5,0,3.7-3.1,3.7-8v-71.2c0-4.9-2.2-8-3.7-8H783.9z"></path>
+          </g>
+          <g class="tochigi kanto prefecture team02" data-code="9" href="#modal9">
+            <title>栃木 / Tochigi</title>
+            <path d="M859.4,593.3c-1.5,0-3.7,3.1-3.7,8v71.2c0,4.9,2.2,8,3.7,8h64.1c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H859.4z"></path>
+          </g>
+          <g class="ibaraki kanto prefecture team02" data-code="8" href="#modal8">
+            <title>茨城 / Ibaraki</title>
+            <path d="M943.6,593.3c-4.4,0-8,3.6-8,8v116.8c0,4.4,3.6,8,8,8H992c4.4,0,8-3.6,8-8V601.3c0-4.4-3.6-8-8-8H943.6z"></path>
+          </g>
+          <g class="fukushima tohoku prefecture team01 modal01" data-code="7" href="#modal7">
+            <title>福島 / Fukushima</title>
+            <path d="M829.5,456.4c-4.4,0-8,3.6-8,8v116.8c0,4.4,3.6,8,8,8H992c4.4,0,8-3.6,8-8V464.4c0-4.4-3.6-8-8-8H829.5z"></path>
+          </g>
+          <g class="yamagata tohoku prefecture team01 modal01" data-code="6" href="#modal6">
+            <title>山形 / Yamagata</title>
+            <path d="M783.9,387.9c-4.4,0-8,3.6-8,8v48.4c0,4.4,3.6,8,8,8h94c4.4,0,8-3.6,8-8v-48.4c0-4.4-3.6-8-8-8H783.9z"></path>
+          </g>
+          <g class="akita tohoku prefecture team01 modal01" data-code="5" href="#modal5">
+            <title>秋田 / Akita</title>
+            <path d="M783.9,296.6c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h94c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H783.9z"></path>
+          </g>
+          <g class="miyagi tohoku prefecture team01 modal01" data-code="4" href="#modal4">
+            <title>宮城 / Miyagi</title>
+            <path d="M898,387.9c-4.4,0-8,3.6-8,8v48.4c0,4.4,3.6,8,8,8h94c4.4,0,8-3.6,8-8v-48.4c0-4.4-3.6-8-8-8H898z"></path>
+          </g>
+          <g class="iwate tohoku prefecture team01 modal01" data-code="3" href="#modal3">
+            <title>岩手 / Iwate</title>
+            <path d="M898,296.6c-4.4,0-8,3.6-8,8v71.2c0,4.4,3.6,8,8,8h94c4.4,0,8-3.6,8-8v-71.2c0-4.4-3.6-8-8-8H898z"></path>
+          </g>
+          <g class="aomori tohoku prefecture team01 modal01" data-code="2" href="#modal2">
+            <title>青森 / Aomori</title>
+            <path d="M783.9,228.2c-4.4,0-8,3.6-8,8v48.4c0,4.4,3.6,8,8,8H992c4.4,0,8-3.6,8-8v-48.4c0-4.4-3.6-8-8-8H783.9z"></path>
+          </g>
+          <g class="hokkaido prefecture team01 modal01" data-code="1" href="#modal1">
+            <title>北海道 / Hokkaido</title>
+            <path d="M783.9,0c-4.4,0-8,3.6-8,8v185.3c0,4.4,3.6,8,8,8h48.4c4.4,0,8-3.6,8-8v-25.6c0-6.6,5.4-12,12-12H992c4.4,0,8-3.6,8-8V8c0-4.4-3.6-8-8-8H783.9z"></path>
+          </g>
+        </g>
+        <g class="boundary-line" stroke="#EEEEEE" stroke-width="12" stroke-linejoin="round">
+          <path d="M216.1,593.3H89.3c-1.1,0-2-0.9-2-2s0.9-2,2-2h126.9c4.4,0,8-3.6,8-8V454.4c0-1.1,0.9-2,2-2s2,0.9,2,2v126.9C228.2,587.9,222.8,593.3,216.1,593.3z"></path>
+        </g>
+      </g>
+    </svg>
+  </div><!-- /.map -->
+
+  <section style="text-align: center;">
+    <button class="test1to2">チーム1を2へ変更</button>
+  </section>
+
+  <section id="modal47" class="modalcontent">
+    <h2 class="modaaltitle">沖縄チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal46" class="modalcontent">
+    <h2 class="modaaltitle">鹿児島チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal45" class="modalcontent">
+    <h2 class="modaaltitle">宮崎チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal44" class="modalcontent">
+    <h2 class="modaaltitle">大分チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal43" class="modalcontent">
+    <h2 class="modaaltitle">熊本チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal42" class="modalcontent">
+    <h2 class="modaaltitle">長崎チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal41" class="modalcontent">
+    <h2 class="modaaltitle">佐賀チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal40" class="modalcontent">
+    <h2 class="modaaltitle">福岡チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal39" class="modalcontent">
+    <h2 class="modaaltitle">高知チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal38" class="modalcontent">
+    <h2 class="modaaltitle">愛媛チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal37" class="modalcontent">
+    <h2 class="modaaltitle">香川チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal36" class="modalcontent">
+    <h2 class="modaaltitle">徳島チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal35" class="modalcontent">
+    <h2 class="modaaltitle">山口チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal34" class="modalcontent">
+    <h2 class="modaaltitle">広島チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal33" class="modalcontent">
+    <h2 class="modaaltitle">岡山チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal32" class="modalcontent">
+    <h2 class="modaaltitle">島根チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal31" class="modalcontent">
+    <h2 class="modaaltitle">鳥取チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal30" class="modalcontent">
+    <h2 class="modaaltitle">和歌山チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal29" class="modalcontent">
+    <h2 class="modaaltitle">奈良チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal28" class="modalcontent">
+    <h2 class="modaaltitle">兵庫チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal27" class="modalcontent">
+    <h2 class="modaaltitle">大阪チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal26" class="modalcontent">
+    <h2 class="modaaltitle">京都チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal25" class="modalcontent">
+    <h2 class="modaaltitle">滋賀チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal24" class="modalcontent">
+    <h2 class="modaaltitle">三重チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal23" class="modalcontent">
+    <h2 class="modaaltitle">愛知チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal22" class="modalcontent">
+    <h2 class="modaaltitle">静岡チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal21" class="modalcontent">
+    <h2 class="modaaltitle">岐阜チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal20" class="modalcontent">
+    <h2 class="modaaltitle">長野チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal19" class="modalcontent">
+    <h2 class="modaaltitle">山梨チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal18" class="modalcontent">
+    <h2 class="modaaltitle">福井チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal17" class="modalcontent">
+    <h2 class="modaaltitle">石川チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal16" class="modalcontent">
+    <h2 class="modaaltitle">富山チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal15" class="modalcontent">
+    <h2 class="modaaltitle">新潟チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal14" class="modalcontent">
+    <h2 class="modaaltitle">神奈川チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal13" class="modalcontent">
+    <h2 class="modaaltitle">東京チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal12" class="modalcontent">
+    <h2 class="modaaltitle">千葉チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal11" class="modalcontent">
+    <h2 class="modaaltitle">埼玉チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal10" class="modalcontent">
+    <h2 class="modaaltitle">群馬チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal9" class="modalcontent">
+    <h2 class="modaaltitle">栃木チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal8" class="modalcontent">
+    <h2 class="modaaltitle">茨城チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal7" class="modalcontent">
+    <h2 class="modaaltitle">福島チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal6" class="modalcontent">
+    <h2 class="modaaltitle">山形チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal5" class="modalcontent">
+    <h2 class="modaaltitle">秋田チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal4" class="modalcontent">
+    <h2 class="modaaltitle">宮城チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal3" class="modalcontent">
+    <h2 class="modaaltitle">岩手チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal2" class="modalcontent">
+    <h2 class="modaaltitle">青森チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+  <section id="modal1" class="modalcontent">
+    <h2 class="modaaltitle">北海道チーム</h2>
+    <div class="clm2wrap">
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+      <div class="wrapitem">
+        <div class="itemimg">
+          <span>sample</span>
+        </div><!-- /.itemimg -->
+        <dl class="playerbox">
+          <dt>お名前 お名前</dt>
+          <dd><a href="" target="_blank">X</a></dd>
+          <dd><a href="" target="_blank">Youtube</a></dd>
+          <dd><a href="" target="_blank">Twitch</a></dd>
+        </dl>
+      </div><!-- /.wrapitem -->
+    </div><!-- /.clm2wrap -->
+  </section>
+</body>
+<script type="text/javascript">
+  //モーダル表示
+  $(".modal01").modaal({
+    overlay_close: true,
+    before_open: function () {
+      $('html').css('overflow-y', 'hidden');
+    },
+    after_close: function () {
+      $('html').css('overflow-y', 'scroll');
+    }
+  });
+</script>
+</html>
