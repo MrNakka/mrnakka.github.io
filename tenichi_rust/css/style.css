@@ -10,13 +10,13 @@
 
 .team01 {
   fill: #ff7c77;
+  animation: blink 1s ease-in-out infinite alternate;
 }
 .team02 {
   fill: #9c6ef2;
 }
 .team03 {
   fill: #7fe06f;
-  animation: blink 1s ease-in-out infinite alternate;
 }
 .team04 {
   fill: #ff9d52;
