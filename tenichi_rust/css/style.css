@@ -5,7 +5,7 @@
 
 .map {
   width: 700px;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 .team01 {
@@ -122,4 +122,13 @@
 }
 .cls-1 {
   fill: #57991b;
+}
+
+.mv {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.mv>img {
+  width: 300px;
 }
