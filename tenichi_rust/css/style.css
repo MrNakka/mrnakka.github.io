@@ -135,3 +135,12 @@
 .mv>img {
   width: 300px;
 }
+
+.obs {
+  background: #000a9c;
+  height: 100vh;
+}
+
+.obs .cls-0 {
+  fill: #000a9c;
+}
