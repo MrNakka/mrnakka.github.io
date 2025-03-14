@@ -9,40 +9,6 @@
   position: relative;
 }
 
-.team01 {
-  fill: #ff7c77;
-  animation: blink 1s ease-in-out infinite alternate;
-}
-.team02 {
-  fill: #9c6ef2;
-}
-.team03 {
-  fill: #7fe06f;
-}
-.team04 {
-  fill: #ff9d52;
-}
-.team05 {
-  fill: #69b9ff;
-}
-.team06 {
-  fill: #ffda53;
-}
-.team08 {
-  fill: #ff7c9b;
-}
-.team09 {
-  fill: #fefeff;
-  stroke: #ccc;
-  stroke-width: 5;
-}
-
-@keyframes blink {
-  0% {opacity: .5;}
-  100% {opacity: 1;}
-}
-
-
 .modalcontent {
   display: none;
 }
@@ -144,4 +110,37 @@
 
 .obs .cls-0 {
   fill: #000a9c;
+}
+
+/* team color */
+.team01 {
+  fill: #ff7c77;
+}
+.team02 {
+  fill: #9c6ef2;
+}
+.team03 {
+  fill: #7fe06f;
+}
+.team04 {
+  fill: #ff9d52;
+}
+.team05 {
+  fill: #69b9ff;
+}
+.team06 {
+  fill: #ffda53;
+}
+.team08 {
+  fill: #ff7c9b;
+}
+.team99 {
+  fill: #fefeff;
+  stroke: #ccc;
+  stroke-width: 5;
+}
+
+@keyframes blink {
+  0% {opacity: .5;}
+  100% {opacity: 1;}
 }
