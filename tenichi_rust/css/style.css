@@ -153,18 +153,18 @@ body {
 /* team color */
 .team01,
 .TOTIGI {
-  fill: #ff7c77;
-  background: #ff7c77 !important;
+  fill: #77b235;
+  background: #77b235 !important;
 }
 .team02,
 .Kochi {
-  fill: #9c6ef2;
-  background: #9c6ef2!important;
+  fill: #7c1015;
+  background: #7c1015!important;
 }
 .team03,
 .Osaka {
-  fill: #7fe06f;
-  background: #7fe06f!important;
+  fill: #ffd700;
+  background: #ffd700!important;
   stroke: #57991b;
   stroke-width: 10;
 }
@@ -175,13 +175,13 @@ body {
 }
 .team05,
 .OKNW {
-  fill: #630d35;
-  background: #630d35!important;
+  fill: #9c2d61;
+  background: #9c2d61!important;
 }
 .team06,
 .toyama {
-  fill: #ffda53;
-  background: #ffda53 !important;
+  fill: #2cb48b;
+  background: #2cb48b !important;
 }
 .team08,
 .wkym {
@@ -192,6 +192,11 @@ body {
 .gifu {
   fill: #d30f18;
   background: #d30f18 !important;
+}
+.team10,
+.Hokkai {
+  fill: #8f683b;
+  background: #8f683b !important;
 }
 .team99 {
   fill: #fefeff;
