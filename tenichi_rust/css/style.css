@@ -172,8 +172,10 @@
   fill: #69b9ff;
   background: #69b9ff!important;
 }
-.team06 {
+.team06,
+.nagano {
   fill: #ffda53;
+  background: #ffda53 !important;
 }
 .team08 {
   fill: #ff7c9b;
