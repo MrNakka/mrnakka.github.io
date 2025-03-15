@@ -183,8 +183,10 @@ body {
   fill: #ffda53;
   background: #ffda53 !important;
 }
-.team08 {
+.team08,
+.wkym {
   fill: #ff7c9b;
+  background: #ff7c9b !important;
 }
 .team99 {
   fill: #fefeff;
