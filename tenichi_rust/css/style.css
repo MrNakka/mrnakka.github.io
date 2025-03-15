@@ -188,6 +188,11 @@ body {
   fill: #ff7c9b;
   background: #ff7c9b !important;
 }
+.team09,
+.gifu {
+  fill: #d30f18;
+  background: #d30f18 !important;
+}
 .team99 {
   fill: #fefeff;
   stroke: #ccc;
