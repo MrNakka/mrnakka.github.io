@@ -112,28 +112,65 @@
   fill: #000a9c;
 }
 
+.togoWrap {
+  width: 700px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  background: #fff;
+  padding: 10px;
+}
+.togoWrap>h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.togoWrap .kenItem {
+  display: flex;
+  align-items: center;
+}
+.togoWrap .kenItem>p {
+  font-weight: bold;
+  line-height: 1;
+  margin-left: 5px;
+}
+.togoWrap .itemBlock {
+  width: 30px;
+  height: 30px;
+  background: #ccc;
+  display: inline-block;
+}
+.kenWrap {
+  display: flex;
+  gap: 10px;
+}
+
 /* team color */
 .team01,
 .TOTIGI {
   fill: #ff7c77;
+  background: #ff7c77 !important;
 }
 .team02,
 .Kochi {
   fill: #9c6ef2;
+  background: #9c6ef2!important;
 }
 .team03,
 .Osaka {
   fill: #7fe06f;
+  background: #7fe06f!important;
   stroke: #57991b;
   stroke-width: 10;
 }
 .team04,
 .Kochi {
   fill: #ff9d52;
+  background: #ff9d52!important;
 }
 .team05,
 .OKNW {
   fill: #69b9ff;
+  background: #69b9ff!important;
 }
 .team06 {
   fill: #ffda53;
