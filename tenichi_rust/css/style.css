@@ -259,6 +259,13 @@ body:not(.obs) .wave:nth-of-type(2) {
   stroke: #ffffff80;
   stroke-width: 5;
 }
+.team10,
+.FKSM {
+  fill: #c327c9;
+  background: #c327c9 !important;
+  stroke: #ffffff80;
+  stroke-width: 5;
+}
 .team99 {
   fill: #fefeff;
   stroke: #ccc;
