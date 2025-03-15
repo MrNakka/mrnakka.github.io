@@ -4,7 +4,7 @@
 3,岩手,Hokkai
 4,宮城,MIYAGI
 5,秋田,AKITA
-6,山形,YMGT
+6,山形,FKSM
 7,福島,FKSM
 8,茨城,Ibarak
 9,栃木,TOTIGI
@@ -12,7 +12,7 @@
 11,埼玉,TOTIGI
 12,千葉,CHIBA
 13,東京,Tokyo
-14,神奈川,kanaga
+14,神奈川,TOTIGI
 15,新潟,Osaka
 16,富山,nagano
 17,石川,isikaw
@@ -39,7 +39,7 @@
 38,愛媛,EHIME
 39,高知,Kochi
 40,福岡,fukuok
-41,佐賀,saga
+41,佐賀,Kochi
 42,長崎,NGSK
 43,熊本,null
 44,大分,null
