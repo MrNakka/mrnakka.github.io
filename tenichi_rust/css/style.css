@@ -113,19 +113,24 @@
 }
 
 /* team color */
-.team01 {
+.team01,
+.TOTIGI {
   fill: #ff7c77;
 }
-.team02 {
+.team02,
+.Kochi {
   fill: #9c6ef2;
 }
-.team03 {
+.team03,
+.Osaka {
   fill: #7fe06f;
 }
-.team04 {
+.team04,
+.Kochi {
   fill: #ff9d52;
 }
-.team05 {
+.team05,
+.OKNW {
   fill: #69b9ff;
 }
 .team06 {
