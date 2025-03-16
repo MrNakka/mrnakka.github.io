@@ -234,8 +234,8 @@ body:not(.obs) .wave:nth-of-type(2) {
 }
 .team06,
 .TOTIGI {
-  fill: #2cb48b;
-  background: #2cb48b !important;
+  fill: #eeff00;
+  background: #eeff00 !important;
   stroke: #ffffff80;
   stroke-width: 5;
 }
