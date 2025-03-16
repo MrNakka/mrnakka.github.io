@@ -197,8 +197,7 @@ body:not(.obs) .wave:nth-of-type(2) {
 }
 
 /* team color */
-.team01,
-.TOTIGI {
+.team01 {
   fill: #246927;
   background: #246927 !important;
   stroke: #ffffff80;
@@ -233,7 +232,7 @@ body:not(.obs) .wave:nth-of-type(2) {
   stroke-width: 5;
 }
 .team06,
-.toyama {
+.TOTIGI {
   fill: #2cb48b;
   background: #2cb48b !important;
   stroke: #ffffff80;
@@ -260,8 +259,7 @@ body:not(.obs) .wave:nth-of-type(2) {
   stroke: #ffffff80;
   stroke-width: 5;
 }
-.team10,
-.FKSM {
+.team10 {
   fill: #c327c9;
   background: #c327c9 !important;
   stroke: #ffffff80;
