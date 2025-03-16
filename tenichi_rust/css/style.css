@@ -140,6 +140,7 @@ body:not(.obs) .wave:nth-of-type(2) {
 .cls-1 {
   fill: #58991b;
   filter: drop-shadow(0 0  20px #fff);
+  background: #58991b !important;
 }
 
 .mv {
@@ -265,10 +266,13 @@ body:not(.obs) .wave:nth-of-type(2) {
   stroke: #ffffff80;
   stroke-width: 5;
 }
-.team99 {
+.team99,
+.null {
   fill: #fefeff;
   stroke: #ccc;
   stroke-width: 5;
+  background: #fefeff !important;
+  border: 2px solid #ccc !important;
 }
 
 @keyframes blink {
