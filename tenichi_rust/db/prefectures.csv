@@ -8,7 +8,7 @@
 7,福島,FKSM
 8,茨城,Kochi
 9,栃木,Kochi
-10,群馬,GUNMA
+10,群馬,Kochi
 11,埼玉,Kochi
 12,千葉,Kochi
 13,東京,Kochi
@@ -28,7 +28,7 @@
 27,大阪,Kochi
 28,兵庫,Kochi
 29,奈良,Kochi
-30,和歌山,Hokkai
+30,和歌山,OKNW
 31,鳥取,Kochi
 32,島根,Kochi
 33,岡山,okayam
@@ -40,9 +40,9 @@
 39,高知,Kochi
 40,福岡,Kochi
 41,佐賀,Kochi
-42,長崎,Hokkai
+42,長崎,OKNW
 43,熊本,null
 44,大分,null
-45,宮崎,Hokkai
+45,宮崎,OKNW
 46,鹿児島,Kochi
-47,沖縄,Hokkai
+47,沖縄,OKNW
