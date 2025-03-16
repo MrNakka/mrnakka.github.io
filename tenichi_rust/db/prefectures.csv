@@ -6,13 +6,13 @@
 5,秋田,AKITA
 6,山形,FKSM
 7,福島,FKSM
-8,茨城,TOTIGI
-9,栃木,TOTIGI
+8,茨城,Kochi
+9,栃木,Kochi
 10,群馬,GUNMA
-11,埼玉,TOTIGI
-12,千葉,TOTIGI
+11,埼玉,Kochi
+12,千葉,Kochi
 13,東京,Kochi
-14,神奈川,TOTIGI
+14,神奈川,Kochi
 15,新潟,Kochi
 16,富山,FKSM
 17,石川,FKSM
@@ -20,7 +20,7 @@
 19,山梨,gifu
 20,長野,FKSM
 21,岐阜,gifu
-22,静岡,TOTIGI
+22,静岡,Kochi
 23,愛知,Kochi
 24,三重,Kochi
 25,滋賀,gifu
