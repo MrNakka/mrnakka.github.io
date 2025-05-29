@@ -3,6 +3,11 @@ body {
   color: #333;
   font-size: 10px;
 }
+@media screen and (max-width: 767px) {
+  main {
+    padding: 0 15px 50px;
+  }
+}
 
 /* Util */
 .area-title {
@@ -27,6 +32,11 @@ a[href$=".pdf"],
   background-position: center right;
   background-repeat: no-repeat;
   padding-right: 2em;
+}
+@media screen and (max-width: 767px) {
+  .area-title {
+    font-size: 1.5rem;
+  }
 }
 
 /* MV */
@@ -104,6 +114,15 @@ a[href$=".pdf"],
 .member-links>li>a:hover {
   border-left: 5px solid #8ebfad;
   padding-left: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .member-list-wrap {
+    justify-content: center;
+  }
+  .list-block {
+    width: 100%;
+  }
 }
 
 /* Rule */
