@@ -302,3 +302,22 @@ a[href$=".pdf"],
 .tR {
   text-align: right;
 }
+
+.list01 {
+  list-style: none;
+  padding-left: 0;
+}
+.list01>li {
+  position: relative;
+  padding-left: 1em;
+}
+.list01>li:before {
+  content: "";
+  position: absolute;
+  top: .4em;
+  left: 0;
+  width: .8em;
+  height: .8em;
+  background-color: #fdc3b4;
+  border-radius: 9999px;
+}
