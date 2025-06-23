@@ -262,3 +262,43 @@ a[href$=".pdf"],
   margin-bottom: 10px;
   text-align: center;
 }
+.rule-item .item-sub-ttl {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.rule-item .item-sub-ttl:not(:first-child) {
+  margin-top: 1em;
+}
+
+.marker-pink {
+  background: linear-gradient(transparent 50%, #f4cccc 50%);
+}
+.marker-orange {
+  background: linear-gradient(transparent 50%, #fff2cc 50%);
+}
+.marker-blue {
+  background: linear-gradient(transparent 50%, #cfe2f3 50%);
+}
+.marker-purple {
+  background: linear-gradient(transparent 50%, #d9d2e9 50%);
+}
+
+.tBold {
+  font-weight: bold !important;
+}
+
+.mt1em {
+  margin-top: 1em;
+}
+
+.tL {
+  text-align: left;
+}
+.tC {
+  text-align: center;
+}
+.tR {
+  text-align: right;
+}
