@@ -166,6 +166,7 @@ a[href$=".pdf"],
   font-size: 1rem;
   max-width: 1280px;
   margin: 0 auto;
+  font-family: "Yusei Magic", sans-serif;
 }
 
 .entry-content {
@@ -261,11 +262,13 @@ a[href$=".pdf"],
   font-size: 1.5rem;
   margin-bottom: 10px;
   text-align: center;
+  font-family: "Murecho", sans-serif;
 }
 .rule-item .item-sub-ttl {
   font-size: 1.25rem;
   margin-bottom: 10px;
   text-align: center;
+  font-family: "Murecho", sans-serif;
 }
 
 .rule-item .item-sub-ttl:not(:first-child) {
