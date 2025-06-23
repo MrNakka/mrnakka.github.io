@@ -252,11 +252,13 @@ a[href$=".pdf"],
 }
 
 .rule-item .item-wrap {
-  background: rgb(251 248 238 / 50%);
-  padding: 10px;
+  background: rgb(255 255 255 / 65%);
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .rule-item .item-ttl {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  text-align: center;
 }
