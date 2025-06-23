@@ -1,7 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fbf8ee;
   color: #333;
   font-size: 10px;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
   main {
@@ -37,6 +42,31 @@ a[href$=".pdf"],
   .area-title {
     font-size: 1.5rem;
   }
+}
+
+.pagetop {
+  transition: none!important;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #fff;
+  border: solid 2px #295784;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+}
+
+.pagetop__arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #295784;
+  border-right: 3px solid #295784;
+  transform: translateY(20%) rotate(-45deg);
 }
 
 /* MV */
@@ -129,4 +159,104 @@ a[href$=".pdf"],
 .rule-area {
   margin: 50px auto 0;
   max-width: 1280px;
+}
+
+/* rule page */
+#rule-page {
+  font-size: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.entry-content {
+  margin-top: 50px;
+}
+.entry-content .table-of-contents {
+  position: relative;
+  margin: 0;
+  padding: 2em 2.5em 1.5em 2em;
+  font-size: 100%;
+  border: solid 2px #ffd9ea;
+  border-radius: 8px;
+  background: #fffcfd;
+  color: #be6fb5;
+  box-shadow: 5px 5px 5px #d5d5d57d;
+}
+.entry-content .table-of-contents::before {
+  content: "目次";
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 30px;
+  width: 120px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  line-height: 27px;
+  text-align: center;
+  color: #be6fb5;
+  background: #ffd4e7;
+  background-image: radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);
+  background-position: 3px 3px, 10px 10px;
+  background-size: 15px 15px;
+  border-bottom: dotted 3px #e796c7;
+  border-top: dotted 3px #e796c7;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transform: rotate(-5deg);
+}
+.entry-content .table-of-contents ul {
+  padding-left: 0;
+}
+.entry-content .table-of-contents li {
+  margin: .2em 0 1em 1em;
+  list-style-type: decimal;
+  line-height: 1.6em;
+  font-weight: bold;
+}
+.entry-content .table-of-contents li ul {
+  margin: 0 0 1em .5em;
+  padding: 0;
+}
+.entry-content .table-of-contents li ul li {
+  margin: .2em 0 0 1em;
+  list-style-type: disc;
+  font-weight: normal;
+  font-size: 100%;
+}
+.entry-content .table-of-contents a {
+  color: #be6fb5;
+  display: block;
+  text-decoration: none;
+  border-bottom: solid 2px #be6fb5;
+}
+.entry-content .table-of-contents ul li a {
+  border-bottom: dotted 1px #be6fb5;
+}
+
+.rule-area {
+  color: #333;
+}
+
+.rule-item {
+  box-shadow: 5px 5px 5px #d5d5d57d;
+  border-radius: 8px;
+  padding: 25px 50px;
+  background-color: #fcfcfc;
+  background-image: radial-gradient(#eee 10%, transparent 20%), radial-gradient(#eee 10%, transparent 20%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+.rule-item+.rule-item {
+  margin-top: 20px;
+}
+
+.rule-item .item-wrap {
+  background: rgb(251 248 238 / 50%);
+  padding: 10px;
+}
+
+.rule-item .item-ttl {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
