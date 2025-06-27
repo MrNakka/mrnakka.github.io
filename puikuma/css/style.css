@@ -307,6 +307,10 @@ a[href$=".pdf"],
   font-weight: bold !important;
 }
 
+.mt00 {
+  margin-top: 0 !important;
+}
+
 .mt05em {
   margin-top: .5em;
 }
@@ -348,14 +352,29 @@ a[href$=".pdf"],
   display: block !important;
 }
 
+.dF {
+  display: flex;
+}
+
+.dFg20 {
+  display: flex;
+  gap: 20px;
+}
+
 .w40 {
   width: 40%;
+}
+.w50 {
+  width: 50%;
 }
 .w60 {
   width: 60%;
 }
 .w80 {
   width: 80%;
+}
+.w100px {
+  width: 100%;
 }
 .spContent {
   display: none;
