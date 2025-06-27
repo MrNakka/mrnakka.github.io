@@ -77,28 +77,28 @@
             <p class="tR">右寄せ右寄せ右寄せ</p>
           </div>
           <div class="list-wrap">
-            <ul class="list01">
+            <ul>
               <li>リスト1リスト1リスト1</li>
               <li>リスト2リスト2<br>リスト2</li>
               <li>リスト3リスト3リスト3<br>
-                <ul class="list01">
+                <ul>
                   <li>リストインリストリストインリスト</li>
                 </ul>
-                <ol class="numlist01">
+                <ol>
                   <li>リストインリストリストインリスト</li>
                 </ol>
               </li>
             </ul>
           </div>
           <div class="list-wrap">
-            <ol class="numlist01">
+            <ol>
               <li>リスト1リスト1リスト1</li>
               <li>リスト2リスト2<br>リスト2</li>
               <li>リスト3リスト3リスト3<br>
-                <ul class="list01">
+                <ul>
                   <li>リストインリストリストインリスト</li>
                 </ul>
-                <ol class="numlist01">
+                <ol>
                   <li>リストインリストリストインリスト</li>
                 </ol>
               </li>
@@ -131,7 +131,7 @@
         <div class="item-wrap">
           <h2 class="item-ttl">基本ルール</h2>
           <section class="list-wrap">
-            <ul class="list01">
+            <ul>
               <li>
                 <span class="tBold">全体チャットの使い方について</span><br>
                 ゲーム内の全体チャットでは、誰が見ても不快にならない発言をお願いします。<br>
@@ -157,7 +157,7 @@
                 毎日3回、以下の時間にサーバーが再起動されます。
                 再起動中は5～10分ほど接続できません。<br>
                 サーバー再起動開始時間は、以下の通りです。
-                <ul class="list01">
+                <ul style="display: flex; gap: 20px;">
                   <li>3：00</li>
                   <li>12：00</li>
                   <li>18：00</li>
@@ -168,7 +168,7 @@
               </li>
               <li>
                 <span class="tBold">他人の拠点からの物資奪取は禁止です</span><br>
-                <ul class="list01">
+                <ul>
                   <li>パスワードを抜いての物資強奪</li>
                   <li>他人の拠点のTC登録</li>
                 </ul>
@@ -190,7 +190,7 @@
                 <span class="tBold">モニュメントの独占禁止</span><br>
                 長時間の独占（目安：1時間程度）はご遠慮ください。<br>
                 モニュメントに訪れる際は、チーム内で利用時間を共有するようにしてください。<br>
-                石壁などでの囲い込みも禁止です。
+                壁での囲い込みも禁止です。
               </li>
               <li>
                 <span class="tBold">TCによる場所取りは禁止</span><br>
@@ -210,14 +210,14 @@
                 チーム内でのトラブル防止のため、個人所有のスクラップはATMに保管してください。
               </li>
               <li>
-                <span class="tBold">アイスAKスキンの使用は禁止です</span><br>
+                <span class="tBold">アイスAK・鏡(ミラー)スキンの使用は禁止です</span><br>
                 <img src="/puikuma/rule/imgs/images-01.jpg" alt="" style="width: 100px;">
                 （※DLC「アークティックパック」内のAKスキン）<br>
                 このスキンを使用したAKを拾うと、ゲームがクラッシュするバグがあります。絶対に使用しないでください。
               </li>
               <li>
                 <span class="tBold">問い合わせはDiscordへ</span><br>
-                <mark class="marker-pink">サーバーに関する質問やトラブル報告などは、Discordの【問い合わせフォーム】から<br>「Create Ticket」ボタンを押して、チケットを発行してください。</mark>
+                <mark class="marker-pink">サーバーに関する質問やトラブル報告などは、Discordの【お問い合わせ】から<br>「チケット作成」ボタンを押して、チケットを発行してください。</mark>
               </li>
             </ul>
           </section><!-- /.list-wrap -->
@@ -256,7 +256,7 @@
                 何度も注意を受けても改善が見られない場合は、運営判断で対応させていただくことがあります。
               </li>
               <li>
-                <span class="tBold">できる限りサーバー内に入る際は配信をお願いしています</span><br>
+                <span class="tBold">出来るだけログイン時には配信をお願いします</span><br>
                 モニュメントやボス戦など、PvPエリアに行くときは必ず配信をお願いします。<br>
                 その他の際も出来る限り配信をお願いしております。<br>
                 4日以上配信がない場合、サーバーやDiscordから追放処分となる可能性があります。<br>
@@ -376,7 +376,7 @@
             </p>
             <h3 class="item-sub-ttl">🔄建築の基本設定</h3>
             <p>
-              <span class="tBold">PvP期間まではハンマーでの回転・破壊はいつでも可能！</span><br>
+              <span class="tBold">PvP期間(7月18日 23:59)まではハンマーでの回転・破壊はいつでも可能！</span><br>
               通常は時間制限がありますが、MODでいつでも回転＆破壊ができるようになっています。<br>
               建築ミスがあっても安心♪
             </p>
@@ -392,23 +392,28 @@
               わら建築のまま崩壊してしまっても、自己責任となります⚠️
             </p>
             <h3 class="item-sub-ttl">🧱拠点の上限とサイズ</h3>
-            <ul class="list01">
-              <li>1チームあたりTC3個まで建築可能<br>（例：マルチTCで3個使っている場合＝拠点1つまで）</li>
+            <ul>
               <li>
-                建築サイズは極端に大きすぎなければOK<br>
-                付近が重くなってしまったりサーバーに負荷がかかっていそうな場合、<br>
-                運営判断で小さくしていただく可能性があります。<br>
-                心配な方は建築前の土台段階で運営へ確認を！
+                1チームあたりTCを合計3個まで使用可能<br>
+                （例1：1つの拠点にTCを3個使っている場合は拠点1つのみ）<br>
+                （例2：拠点にマルチでTCを2個使用 + 別の場所にヘリ拠点を1箇所はOK！）
               </li>
-              <li>石壁は一周のみOK<br>※スタック数が下がっているので風化に注意‼️</li>
+              <li>
+                建築サイズは最大で初期リス程度に！<br>
+                拠点 + 拠点に置く箱やかまどなどを含めたリミットを設けています。<br>
+                1チーム辺りの上限数は、チャット欄に<span class="marker-purple">/limit</span>を入力する事で上限数が出ます。<br>
+                リミットが限界まで達すると箱なども置けなくなってしまうのでお気をつけください！<br>
+                設置数に制限があるものは1人1個までの場合は、6人チームであれば最大6個まで。
+              </li>
+              <li>拠点を囲む壁は1周のみにしてください</li>
             </ul>
-            <h3 class="item-sub-ttl">⚡電力・かまどの上限数</h3>
+            <h3 class="item-sub-ttl">⚡電力について</h3>
             <p>
-              テストジェネレーターを使用する事をオススメします！<br>
-              <span class="tBold">テストジェネレーターは初期リス・バンディットキャンプで販売中です！</span>
+              <span class="marker-orange">このサーバーでは風車の使用を禁止しております。(ドロップもBPも出ません)</span><br>
+              テストジェネレーターを使用するようにしてください。<br>
+              <span class="tBold">テストジェネレーターの入手方法はドロップ または 初期リスで販売中です！</span>
             </p>
             <ul>
-              <li>風車：<span class="tBold">1チーム2台まで</span></li>
               <li>ソーラーパネル：<span class="tBold">5台まで</span></li>
               <li>大かまど：<span class="tBold">4個まで</span></li>
               <li>小かまど：<span class="tBold">10個まで</span></li>
@@ -416,10 +421,11 @@
             </ul>
             <h3 class="item-sub-ttl">🚫トラップ類の設置について</h3>
             <p>
-              <span class="tBold">レイド期間以外の設置は禁止！</span><br>
-              以下のトラップは<span class="tBold">レイド期間外では使わないようにしてください</span>
+              <span class="tBold">レイド期間以外の使用は禁止！ 設置のみであればOK！</span><br>
+              以下のトラップは<span class="tBold">レイド期間中のみ使用してください。</span><br>
+              （1人1個設置出来る仕様になっているので6人チームであれば最大6個まで）
             </p>
-            <ul class="list01">
+            <ul>
               <li>フレイムタレット</li>
               <li>オートタレット</li>
               <li>ショットガントラップ</li>
@@ -535,13 +541,13 @@
                 <dt class="tBold">項目</dt>
                 <dd class="tBold">制限内容</dd>
                 <dt>フレイムターレット</dt>
-                <dd class="tBold">使用禁止</dd>
+                <dd>最大 <span class="tBold">6台まで</span></dd>
                 <dt>オートターレット</dt>
-                <dd>最大 <span class="tBold">3台まで</span></dd>
+                <dd>最大 <span class="tBold">6台まで</span></dd>
                 <dt>ショットガントラップ</dt>
-                <dd>最大 <span class="tBold">2台まで</span></dd>
+                <dd>最大 <span class="tBold">6台まで</span></dd>
                 <dt>SAMターレット</dt>
-                <dd>最大 <span class="tBold">3台まで</span><br><span class="tBold">レイド時以外は起動禁止</span></dd>
+                <dd>最大 <span class="tBold">6台まで</span><br><span class="tBold">レイド時以外は起動禁止</span></dd>
                 <dt>MLRS</dt>
                 <dd class="tBold">レイド時以外は起動禁止</dd>
                 <dt>ロケランの火炎弾</dt>
@@ -606,7 +612,7 @@
             </p>
             <div class="list-wrap">
               <ul>
-                <li>シグナルは<span class="tBold">バンディットキャンプなど</span>で購入できます。</li>
+                <li>シグナルは<span class="tBold">初期リスで購入</span>できます。</li>
                 <li>
                   呼び出したヘリは<span class="tBold">召喚者チームのメンバーだけをターゲット</span>とします。<br>
                   <span class="marker-orange">別の場所にいても、同じチームなら対象になるのでご注意ください！</span>
@@ -616,8 +622,11 @@
           </section><br>
           <section class="text-block mt1em">
             <h3 class="item-sub-ttl">🔄呼び出しの制限（クールタイム）</h3>
-            <p><span class="tBold">各チームで1日2回まで</span>の攻略に制限されています。<br>難易度によって、次回呼び出しまでのクールタイムが変わります。</p>
-            <p><span class="tBold">エリート難易度をクリアしたチーム</span>には、特別なオプションをご用意！<br>クリア後は、<span class="tBold">Discordのチケットから申請</span>をお願いします！</p>
+            <p><span class="tBold">エリート以上の難易度については、1日2回まで</span>の攻略に制限されています。<br>難易度によって、次回呼び出しまでのクールタイムが変わります。</p>
+            <p>
+              <span class="tBold">ナイトメア難易度をクリアしたチーム</span>には、特別なオプションをご用意！<br>
+              <span class="tBold">ナイトメアの通常・ウェーブ・マルチ、全3種をクリア後に運営までご連絡ください！</span>
+            </p>
           </section><br>
           <section class="text-block mt1em">
             <h3 class="item-sub-ttl">🔁リタイアコマンド</h3>
@@ -677,12 +686,12 @@
             <p>どの食材がどこで手に入るかは、<span class="tBold">レシピメニュー内の[材料]</span>タブで確認できます！</p>
           </section><br>
           <section class="text-block mt1em">
-            <h3 class="item-sub-ttl">🔕通知の設定</h3>
-            <p>「食材のドロップ通知が多すぎる…」と感じた方は、<span class="tBold">設定から通知をOFF</span>にすることができます</p>
-          </section><br>
-          <section class="text-block mt1em">
             <h3 class="item-sub-ttl">💰販売ルールについて</h3>
             <ul>
+              <li>
+                <span class="tBold">一部商品は最低販売価格が設定されています。</span><br>
+                各店舗によるおまけに関しては自由。ただし、割引はNGです。
+              </li>
               <li><span class="tBold">調理師免許が必要な料理は自動販売機を使った売買は不可</span>となっています。</li>
               <li>料理は<span class="tBold">飲食店として運営・販売</span>してください！</li>
             </ul>
@@ -690,7 +699,7 @@
           <section class="text-block mt1em">
             <p>
               自分のお店を持って料理をふるまうのも、このMODの大きな楽しみのひとつです🍛<br>美味しいご飯で仲間との交流も深まるかも…？<br>
-              ご不明点や、免許の取得についてのお問い合わせは、Discordの【問い合わせフォーム】からお気軽にどうぞ！
+              ご不明点や、免許の取得についてのお問い合わせは、Discordの【お問い合わせ】からお気軽にどうぞ！
             </p>
           </section>
         </div>
