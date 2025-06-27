@@ -374,7 +374,7 @@ a[href$=".pdf"],
   width: 80%;
 }
 .w100px {
-  width: 100%;
+  width: 100px;
 }
 .spContent {
   display: none;
