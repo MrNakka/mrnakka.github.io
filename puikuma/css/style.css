@@ -282,6 +282,7 @@ a[href$=".pdf"],
   margin-bottom: 10px;
   text-align: center;
   /* font-family: "Murecho", sans-serif; */
+  font-family: "Yusei Magic", sans-serif;
 }
 
 .rule-item .item-sub-ttl:not(:first-child) {
