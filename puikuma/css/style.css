@@ -390,7 +390,7 @@ a[href$=".pdf"],
 }
 .rule-item .item-wrap ul>li,
 .rule-item .item-wrap ol>li {
-  margin-top: 1.5em;
+  margin-top: 1em;
   position: relative;
   padding-left: 1em;
   text-indent: 0em;
