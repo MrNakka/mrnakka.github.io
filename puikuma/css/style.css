@@ -75,9 +75,14 @@ a[href$=".pdf"],
 
 /* MV */
 .mv-area {
-  width: 250px;
-  margin: 10px auto;
+  /* width: 250px; */
+  margin: 10px auto -20px;
   text-align: center;
+}
+.mv-area h1 a img {
+  width: 80%;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 /* Member */
@@ -173,6 +178,10 @@ a[href$=".pdf"],
   /* font-family: "Yusei Magic", sans-serif; */
   font-family: "Murecho", sans-serif;
   line-height: 2;
+}
+
+#rule-page .mv-area {
+  margin-bottom: -20px;
 }
 
 .entry-content {
