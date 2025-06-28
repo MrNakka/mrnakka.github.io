@@ -483,3 +483,40 @@ a[href$=".pdf"],
     width: 100%;
   }
 }
+
+.rule-item .update-wrap {
+  background: rgb(255 255 255 / 65%);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.rule-item .update-block {
+  overflow-y: scroll;
+  height: 5em;
+}
+.rule-item .update-item {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px dotted #ccc;
+}
+.rule-item .update-item dt {
+  width: 15%;
+}
+.rule-item .update-item dd {
+  width: 80%;
+}
+@media screen and (max-width: 767px) {
+  .rule-item .update-item {
+    flex-direction: column;
+    width: 100%;
+  }
+  .rule-item .update-item dt {
+    width: 100%;
+  }
+  .rule-item .update-item dd {
+    width: 100%;
+  }
+}
