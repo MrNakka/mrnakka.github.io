@@ -6,6 +6,7 @@ body {
   background: #bfe7b9;
   color: #333;
   font-size: 10px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
@@ -73,13 +74,54 @@ a[href$=".pdf"],
   transform: translateY(20%) rotate(-45deg);
 }
 
+.fixed-header {
+  background: #ffffff9d;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.header-nav {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header-nav .nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 5px 0;
+}
+.header-nav .list-item {
+  width: calc(100% / 2);
+  text-align: center;
+  font-size: 1.2rem;
+  border-left: 2px solid #ffd9ea;
+}
+.header-nav .list-item:last-of-type {
+  border-right: 2px solid #ffd9ea;
+}
+.header-nav .list-item>a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #333;
+}
+.header-nav .list-item>a:hover {
+  opacity: .5;
+  transition: 0.1s ease all;
+}
+
 /* MV */
 .mv-area {
   /* width: 250px; */
   margin: 10px auto -20px;
   text-align: center;
 }
-.mv-area h1 a img {
+.mv-area h1 a img,
+.mv-area h1 img {
   width: 80%;
   max-width: 450px;
   margin: 0 auto;
@@ -93,6 +135,7 @@ a[href$=".pdf"],
 
 .member-list-wrap {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
 }
