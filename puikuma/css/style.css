@@ -20,6 +20,10 @@ body {
   margin-bottom: 20px;
 }
 
+[class$="-area"] + [class$="-area"] {
+  margin-top: 50px;
+}
+
 [class$="-area"] a {
   font-size: 1rem;
   color: #333;
