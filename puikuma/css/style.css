@@ -180,6 +180,11 @@ a[href$=".pdf"],
 .member-txt-item {
   width: 65%;
 }
+.member-subtext {
+  font-size: .7rem;
+  line-height: 1;
+  margin-bottom: 5px;
+}
 .member-name {
   font-size: 1.1rem;
   line-height: 1;
