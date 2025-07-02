@@ -135,13 +135,13 @@ a[href$=".pdf"],
 
 .member-list-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .list-block {
-  width: calc(100% / 4 - 10px);
+  width: calc(100% / 4 - 8px);
   background: #fef4e8;
   display: flex;
   align-items: center;
