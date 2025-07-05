@@ -568,3 +568,46 @@ a[href$=".pdf"],
     width: 100%;
   }
 }
+
+.live-area {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+#channels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #333;
+  margin-top: 30px;
+}
+
+.channel {
+  width: calc(100% / 5 - 8px);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #d5d5d57d;
+  background: #fef4e8;
+}
+
+.channel a {
+  text-decoration: none;
+  color: #333;
+}
+
+.user-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.user-name::before {
+  content: "●";
+  color: red;
+  margin-right: 5px;
+}
+
+.user-img {
+  width: 150px;
+  margin: 0 auto;
+}
