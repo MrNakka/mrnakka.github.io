@@ -611,3 +611,13 @@ a[href$=".pdf"],
   width: 150px;
   margin: 0 auto;
 }
+
+/*  */
+.gorori-area {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.gorori-area p {
+  font-size: 2rem;
+}
