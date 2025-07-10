@@ -42,7 +42,6 @@ const channels = [
   { type: "twitch", name: "kuran_kakko", displayName: "【かっこ】", images: "1770851387150082049.jpg" },
   { type: "twitch", name: "kanatayona", displayName: "宇宙よな", images: "1881373243128569856.jpg" },
   { type: "twitch", name: "renren2210", displayName: "過労キティ", images: "1677625359913877505.jpg" },
-  { type: "twitch", name: "kanzakifubuki_vt", displayName: "神咲ふぶき", images: "1930653090841317376.jpg" },
   { type: "twitch", name: "kikinene", displayName: "ききねー", images: "1927924232815874048.jpg" },
   { type: "twitch", name: "ginogino00000", displayName: "ギノギノ", images: "1924824164839669760.jpg" },
   { type: "twitch", name: "giveupoji3", displayName: "GiveUpOji3", images: "1573696145045323776.jpg" },
