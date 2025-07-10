@@ -96,7 +96,6 @@ const channels = [
   { type: "twitch", name: "chapihara", displayName: "ちゃぴはら", images: "1469507946761494532.jpg" },
   { type: "twitch", name: "tyanmash", displayName: "ちゃんまー", images: "1879164370560929792.jpg" },
   { type: "twitch", name: "tsukinekogames", displayName: "月希猫", images: "1891367389067202560.jpg" },
-  { type: "twitch", name: "tekka_cocomaru", displayName: "鉄火 狐々丸", images: "1927561386768355328.jpg" },
   { type: "twitch", name: "tepotamasann", displayName: "てぽたま", images: "1411210893279383555.jpg" },
   { type: "twitch", name: "t0ki335", displayName: "とおき", images: "1364273094941044736.jpg" },
   { type: "twitch", name: "dottocomsan", displayName: "どっとこむさん", images: "1881655075480993792.jpg" },
