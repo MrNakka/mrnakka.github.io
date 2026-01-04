@@ -48,7 +48,7 @@ body:not(.obs) .wave:nth-of-type(2) {
 }
 
 .wrap {
-  background: url(/tenichi_rust/images/bg_l.png) no-repeat left top 10%, url(/tenichi_rust/images/bg_r.png) no-repeat right top;
+  background: url(/images/bg_l.png) no-repeat left top 10%, url(/images/bg_r.png) no-repeat right top;
   background-size: 350px auto;
   height: 100vh;
   position: relative;
@@ -119,7 +119,7 @@ body:not(.obs) .wave:nth-of-type(2) {
       rgba(0,0,0,0.15),
       rgba(0,0,0,0.505)
     ),
-    url("/tenichi_rust/images/77692f40-bdc4-47d1-9ff5-a9cca5bd09cc.png");
+    url("/images/77692f40-bdc4-47d1-9ff5-a9cca5bd09cc.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -464,6 +464,7 @@ h2.section-title {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   filter: saturate(1.1) contrast(1.05);
+  object-position: 50% 50%;
 }
 
 .member-info {
@@ -512,7 +513,7 @@ h2.section-title {
 
 /* ===== 中身（和紙） ===== */
 .modaal-content-container {
-  background: url("/tenichi_rust/assets/img/washi.png") center / cover;
+  /* background: url("/assets/img/washi.png") center / cover; */
   padding: 2.2rem;
 
   /* 初期状態 */
